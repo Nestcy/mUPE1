@@ -1,0 +1,6 @@
+{
+  "name": "Mupezeni — Retail Operating System",
+  "description": "The intelligent operating system for retail. Connect sales, inventory, finances, digital channels and AI workers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

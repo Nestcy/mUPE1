@@ -1,0 +1,1398 @@
+We should redesign Mupezeni as a **product-led retail technology company, not a conventional AI agency website**.
+
+The website should make a retailer think: *“This is exactly what happens in my business. I can see where the time goes, where the information breaks, and how this system could help.”*
+
+I'd borrow the clarity and structured product storytelling of LEANSpark, particularly its interactive sections, measurable activity, clear workflows and demonstrations. For the visual experience, I'd take inspiration from [Higgsfield AI](https://higgsfield.ai/?_bhlid=e4c7a0cf111a48f0247626ff60bd0cd62675cd3d&utm_source=chatgpt.com): cinematic product reveals, transitions between scenes, animated typography and motion that helps tell a story.
+
+The result should still feel distinctly **Mupezeni: African retail, warm terracotta, editorial design, real business workflows and practical AI.** Not a generic futuristic AI template. [LEANSpark](https://leanspark.ai/)
+
+One important rule before we begin: **we must not invent statistics about Zambian retailers, customer volumes, hours lost or business results.** Instead, we'll make the problem quantifiable with an interactive calculator, demonstrate the workflow using clearly labelled sample data, and add verified customer evidence as we collect it.
+
+# MUPEZENI
+## Website redesign: strategy, pages, copy and motion design
+
+---
+
+# 1. The new website strategy
+
+### Brand positioning
+
+**MUPEZENI**
+
+*The intelligent operating system for retail.*
+
+### Brand tagline
+
+**Grow your retail business while you sleep.**
+
+### Core promise
+
+Connect your sales, inventory, finances, digital storefronts and AI workers in one operating system, so your business spends less time juggling tools and more time serving customers and growing.
+
+### Who we are building for
+
+Our initial audience is retailers and e-commerce businesses in Zambia, particularly those that:
+
+- Receive customer enquiries and orders through WhatsApp.
+- Sell through multiple channels.
+- Manage inventory using spreadsheets, notebooks or disconnected applications.
+- Manually update product availability and prices.
+- Struggle to keep sales, stock and financial records consistent.
+- Spend hours answering repetitive questions or following up with customers.
+- Want to grow without making the owner responsible for every operational task.
+
+### The central problem
+
+Retail businesses have information scattered across different systems.
+
+A customer places an order on WhatsApp. Someone checks stock. Someone records the sale. Someone updates inventory. Someone else remembers to update the online catalog. Later, the owner tries to understand what sold, what remains and how much money the business actually made.
+
+The owner becomes the integration layer between disconnected tools.
+
+**Mupezeni connects the information and workflows that should already work together.**
+
+### The commercial offer
+
+- **K2,000 per month**
+- Implementation and launch within **4–6 weeks**
+- An agreement is signed before implementation begins.
+- The first month's payment is due when Mupezeni launches for the business.
+- A **30-day money-back guarantee** applies after launch, subject to clearly stated terms.
+
+This offer needs to be visible without making the entire website feel like a pricing advertisement.
+
+---
+
+# 2. The website architecture
+
+I recommend seven main pages, plus a few supporting pages.
+
+| Page | Purpose | Primary action |
+|---|---|---|
+| Home | Explain the problem and demonstrate the solution | Book a demo |
+| Platform | Explain how the connected retail system works | Explore the platform |
+| AI Workers | Show the jobs AI workers can perform | See a worker in action |
+| How It Works | Explain implementation and launch | Get started |
+| Pricing | Make the commercial offer transparent | Start a conversation |
+| About Mupezeni | Explain the mission and approach | Meet the founder |
+| Founder | Introduce Ernest Zimba and the company's direction | Contact Mupezeni |
+| Contact | Convert interest into a conversation | WhatsApp or email |
+| Privacy and Terms | Establish trust and define the relationship | Read the policies |
+
+The navigation should remain simple:
+
+**Logo | Platform | AI Workers | How It Works | Pricing | About | Book a Demo**
+
+On mobile, keep a visible **WhatsApp** contact action.
+
+Now, let's design the actual experience.
+
+---
+
+# PAGE 1: HOME
+
+## Section 1: The cinematic opening
+
+### Visual direction
+
+A warm off-white background. Large editorial typography. Terracotta accents. A restrained, high-quality motion sequence showing a retailer's world.
+
+The opening should not begin with a random AI-generated video of a robot, glowing circuit board or businessman staring at a laptop.
+
+Instead, show familiar retail moments:
+
+1. A customer sends a WhatsApp message asking whether a product is available.
+2. A staff member checks stock in another interface.
+3. A sale is recorded.
+4. Inventory changes.
+5. The business dashboard reflects the sale.
+6. An AI customer support worker answers another customer using the updated product information.
+
+The scenes should transition into a unified Mupezeni interface.
+
+The visual message is simple: **separate activities becoming one connected operation.**
+
+### Website copy
+
+**MUPEZENI | THE INTELLIGENT OPERATING SYSTEM FOR RETAIL**
+
+# Your retail business runs on disconnected systems. It doesn't have to.
+
+Your sales are in one place. Your inventory is somewhere else. Customer conversations are scattered across WhatsApp and other channels. And you're still the person making everything work together.
+
+Mupezeni connects your retail operations and gives AI workers the tools and business information they need to help you run them.
+
+**[Book a Demo]**  
+**[See How It Works]**
+
+Sales. Inventory. Finances. Digital channels. AI workers.
+
+One connected retail operation.
+
+*Built in Zambia, with African retail businesses in mind.*
+
+**Design note:** The hero should contain an animated product interface beside the copy. The interface is the evidence. The headline explains why it matters.
+
+Avoid putting a wall of feature cards above the fold.
+
+---
+
+## Section 2: Make the problem tangible
+
+### Heading
+
+**Your business is growing. Why is running it getting harder?**
+
+### Supporting copy
+
+Every new order creates work.
+
+Someone has to confirm availability, update records, respond to the customer, track payment and make sure the numbers still add up.
+
+When your tools don't communicate, the work falls back on you and your team.
+
+### Three problem cards
+
+**01. Your customers are in the chat. Your business records are somewhere else.**
+
+Orders and enquiries arrive through WhatsApp, but the information may still need to be entered into inventory, sales records or another application.
+
+**02. Your team spends time moving information instead of acting on it.**
+
+Updating products, checking stock, reconciling sales and answering repetitive questions can turn routine work into a chain of manual tasks.
+
+**03. You cannot make confident decisions from disconnected information.**
+
+If your sales, product costs, expenses and inventory records are incomplete or inconsistent, understanding business performance becomes harder.
+
+### Visual treatment
+
+Each card should animate into view as the visitor scrolls.
+
+For the first card, show a WhatsApp order appearing on one side while a disconnected stock record sits on the other.
+
+For the second, show information being copied between three interfaces.
+
+For the third, show scattered records assembling into one coherent dashboard.
+
+The visual storytelling should explain the problem before the visitor reads every word.
+
+---
+
+## Section 3: The quantifiable problem
+
+This is one of the most important parts of the new website.
+
+We should not simply write, "Retailers waste hours every week."
+
+We should help the visitor calculate **how much time their own business spends managing disconnected operations**.
+
+### Heading
+
+**How much of your week goes into keeping everything connected?**
+
+### Supporting copy
+
+Count the work your business already does.
+
+Estimate the time spent handling orders, checking inventory, updating catalogs, recording sales and answering repetitive customer questions.
+
+Then see what those tasks add up to over a month.
+
+### Interactive calculator design
+
+Build a calculator with adjustable inputs.
+
+| Activity | Input |
+|---|---|
+| WhatsApp and social orders handled daily | User enters a number |
+| Average minutes spent processing each order | User enters a number |
+| Customer enquiries answered daily | User enters a number |
+| Average minutes per enquiry | User enters a number |
+| Hours spent updating products and stock each week | User enters a number |
+| Hours spent reconciling sales and finances each week | User enters a number |
+| Days the business operates each week | User enters a number |
+
+The calculator should estimate:
+
+- Hours spent on these activities each week.
+- Hours spent on these activities each month.
+- The equivalent number of eight-hour working days.
+- Potential time savings under different automation scenarios.
+
+### Example demonstration
+
+Use clearly labelled illustrative inputs:
+
+- 20 orders per day.
+- 4 minutes spent processing each order.
+- 30 customer enquiries per day.
+- 2 minutes per enquiry.
+- 5 hours per week updating products and stock.
+- 4 hours per week reconciling sales and finances.
+- 6 operating days per week.
+
+These inputs produce:
+
+| Activity | Estimated weekly time |
+|---|---:|
+| Processing orders | 8 hours |
+| Answering enquiries | 6 hours |
+| Updating products and stock | 5 hours |
+| Reconciling sales and finances | 4 hours |
+| **Total** | **23 hours** |
+
+That's approximately **99.7 hours over an average month**, using 4.33 weeks per month.
+
+That is more than twelve eight-hour working days.
+
+This is an illustration of the calculator, **not a claim about the average Zambian retailer**.
+
+### Add the WhatsApp business question
+
+Include a second, optional panel:
+
+**How much of your business comes through WhatsApp?**
+
+Ask the visitor to enter:
+
+- WhatsApp orders per week.
+- Average order value in kwacha.
+- Percentage of those orders that are completed.
+- Number of enquiries that never become orders, if known.
+
+The calculator can show:
+
+- Estimated weekly order value.
+- Estimated monthly order value.
+- The number of enquiries that do not convert, where the user has provided the necessary information.
+
+For example, 40 orders per week at an average value of K250 represent K10,000 in weekly order value.
+
+That is **order value, not profit**, and it should not be presented as revenue generated by Mupezeni.
+
+We should not claim that Mupezeni will recover lost orders or save a specific percentage of working hours until we have evidence from real implementations.
+
+### Final calculator CTA
+
+**Your numbers tell a story. Let's find out what can be connected.**
+
+[Discuss Your Business]
+
+---
+
+## Section 4: Introduce the solution
+
+### Heading
+
+**One connected system. A more capable business.**
+
+### Supporting copy
+
+Mupezeni brings the core parts of retail operations together.
+
+Record sales. Keep inventory organized. Understand your numbers. Connect digital sales channels. Give AI workers controlled access to the information and tools they need to perform specific jobs.
+
+Instead of treating every task as a separate process, Mupezeni helps your business operate as a connected system.
+
+### Visual
+
+Use a central animated Mupezeni dashboard surrounded by five connected areas:
+
+- Sales
+- Inventory
+- Finances
+- Digital channels
+- AI workers
+
+When the visitor hovers over or selects an area, the relevant workflow illuminates.
+
+Clicking **Inventory**, for example, could show a product's stock level changing after a sale.
+
+Clicking **AI Customer Support** could reveal how a customer enquiry is answered using authorized product information.
+
+This should be an actual interactive demo or a clearly labelled product simulation, not a static illustration pretending to be live software.
+
+---
+
+## Section 5: Demonstrate the product
+
+### Heading
+
+**See what happens when your retail operations talk to each other.**
+
+This section should contain three short demonstrations.
+
+### Demo 1: A sale becomes a business record
+
+**Before:** An order arrives through a digital channel. Someone manually updates stock and sales records.
+
+**With Mupezeni:** A sale recorded through a supported workflow updates the relevant business records, with the appropriate checks and permissions.
+
+**Show:**
+
+1. A customer order.
+2. The corresponding sales record.
+3. The inventory change.
+4. The updated sales summary.
+
+**CTA:** Watch the Sales and Inventory Demo.
+
+### Demo 2: A customer gets an answer using business information
+
+**Before:** A customer asks about availability. Someone has to check the stock record and reply.
+
+**With Mupezeni:** An authorized AI customer support worker can retrieve relevant product information from connected business data and respond through a supported channel.
+
+**Show:**
+
+Customer: "Do you still have the black size 42?"
+
+AI worker: "Let me check the current stock information."
+
+The demonstration then shows the worker retrieving the relevant product record before responding.
+
+Use sample products and sample stock data, clearly marked as demonstration data.
+
+Do not show the worker claiming that a product is available before verifying the record.
+
+**CTA:** Watch the Customer Support Demo.
+
+### Demo 3: One product record, fewer repeated updates
+
+**Before:** Product information needs to be maintained across separate catalogs and channels.
+
+**With Mupezeni:** The central product record can serve as the source for supported catalog and channel workflows, subject to integration capabilities and synchronization rules.
+
+**Show:**
+
+1. A product's price or availability changes.
+2. The central record updates.
+3. The relevant connected catalog workflow is triggered.
+4. The interface shows whether the update succeeded or requires attention.
+
+Do not imply that every external catalog updates automatically until that integration has been implemented and tested.
+
+**CTA:** Watch the Catalog Management Demo.
+
+---
+
+## Section 6: Meet the AI workers
+
+### Heading
+
+**Give the repetitive work somewhere to go.**
+
+### Supporting copy
+
+Mupezeni is designed to help businesses delegate defined tasks to AI workers that operate with controlled access to business information and approved tools.
+
+Each worker has a job. Each job has boundaries.
+
+### Worker cards
+
+**AI Customer Support**
+
+Helps answer product questions, check authorized business information and handle routine customer conversations.
+
+**AI Catalog Management**
+
+Helps maintain product information and coordinate supported catalog updates.
+
+**AI Marketing**
+
+Helps prepare marketing content and campaigns, with approval workflows for actions that require human review.
+
+**AI Business Operations**
+
+Helps organize operational information and surface tasks that need attention.
+
+**AI Sales and Follow-up**
+
+Helps manage leads and follow-ups through supported workflows, subject to customer consent and channel requirements.
+
+**Business Intelligence**
+
+Helps turn available sales, inventory and operational records into clearer summaries for decision-making.
+
+### Interaction design
+
+Each card opens into a short demonstration showing:
+
+- The task.
+- The information the worker uses.
+- The action it can take.
+- What requires human approval.
+- What happens when the worker cannot verify something.
+
+This will communicate practical capability far better than a list of impressive AI buzzwords.
+
+---
+
+## Section 7: Who Mupezeni is for
+
+### Heading
+
+**Built for retailers tired of holding everything together manually.**
+
+### Retail and e-commerce
+
+Connect the operational work behind online orders, customer conversations and inventory.
+
+### Businesses selling through WhatsApp
+
+Make product information, order handling and customer support more connected.
+
+### Multi-channel retailers
+
+Reduce unnecessary duplication between business records and supported digital channels.
+
+### Growing businesses
+
+Build more consistent operating workflows without relying on the owner to personally manage every repeated task.
+
+### Supporting copy
+
+Mupezeni is initially focused on digital retail operations. It is not being presented as a complete replacement for every accounting package, physical point-of-sale terminal or business application.
+
+We will clearly identify which workflows and integrations are supported for each implementation.
+
+---
+
+## Section 8: The implementation offer
+
+### Heading
+
+**Get Mupezeni running in your business in 4–6 weeks.**
+
+### Supporting copy
+
+We implement and launch Mupezeni for your business within 4–6 weeks.
+
+You sign an agreement before implementation begins. You pay K2,000 for your first month when we launch the solution, with a 30-day money-back guarantee.
+
+### Three steps
+
+**01. Understand your operations**
+
+We discuss how your business manages sales, products, stock, customer enquiries and financial records.
+
+**02. Implement and configure Mupezeni**
+
+We prepare the system, configure the relevant workflows and work through the implementation process.
+
+**03. Launch and evaluate**
+
+We launch Mupezeni for your business. Your first monthly payment is due at launch, and the 30-day money-back guarantee gives you an opportunity to evaluate the solution under its stated terms.
+
+### CTA
+
+**Let's talk about your business.**
+
+[Book a Demo]
+
+---
+
+## Section 9: Closing statement
+
+### Heading
+
+**Your business should not depend on you remembering every little thing.**
+
+### Supporting copy
+
+Connect your operations. Reduce repetitive work. Give your team better access to business information.
+
+Build a retail business that can do more without making every task your responsibility.
+
+**[Talk to Mupezeni]**
+
+WhatsApp: +260 776 091 393  
+Email: hello.mupezeni@gmail.com
+
+**MUPEZENI**  
+*Grow your retail business while you sleep.*
+:::
+
+---
+
+# PAGE 2: THE PLATFORM
+
+This page should explain how Mupezeni works as a system rather than simply listing features.
+
+## Hero
+
+# Your retail operations, connected.
+
+Mupezeni connects the information and workflows behind your retail business, from digital sales and inventory to finances, customer conversations and AI-powered operations.
+
+The goal is simple: less manual coordination, better-connected information and more capacity to serve your customers.
+
+**[See the Platform in Action]**
+
+## Section 1: The foundation
+
+### Sales and order management
+
+Keep digital sales and order information organized.
+
+The objective is to maintain a consistent record of orders, their status and their relationship to the rest of the business.
+
+### Inventory management
+
+Manage product information, stock levels, stock movements and availability.
+
+Inventory records should reflect the sales, adjustments and other stock movements recorded through supported workflows.
+
+### Financial visibility
+
+Bring relevant sales, costs and expenses into clearer operational reporting.
+
+Understand sales revenue, estimated cost of goods sold, gross profit and other available business indicators.
+
+These reports depend on accurate source records. They should not be described as a complete statutory accounting or tax system unless those capabilities are actually implemented.
+
+### Digital channels
+
+Connect the business information used across supported storefronts, catalogs and customer channels.
+
+The purpose is to reduce repeated work and prevent disconnected product information from becoming a constant operational problem.
+
+### AI workers
+
+Give designated AI workers access to the specific business data and external integrations they need for their assigned jobs.
+
+Business-data permissions and external-platform permissions should be configured and enforced separately.
+
+## Section 2: Show the connected workflow
+
+### Heading
+
+**A change in one place should not create five more jobs elsewhere.**
+
+Build an animated product journey:
+
+**Product information → Inventory → Digital catalog → Customer enquiry → Sale → Business records**
+
+Each step should expand to show the information passed between the relevant components.
+
+The visitor should be able to see where the workflow is automatic, where a human approval is needed, and where an integration is not yet available.
+
+## Section 3: A shared source of truth
+
+### Heading
+
+**Your business information should have a home.**
+
+Mupezeni is designed around a central source of business information.
+
+Products, stock, sales and relevant financial records should not become independent versions of reality.
+
+Connected channels and AI workers should use authorized information from the appropriate business records, while changes and external synchronization are handled through defined workflows.
+
+### Visual
+
+Show a central product record containing:
+
+- Product name.
+- SKU or product identifier.
+- Price.
+- Available stock.
+- Product description.
+- Relevant channel information.
+
+Then show how that information can be used by a sales workflow, customer support worker and supported digital catalog.
+
+Make it clear that external platforms may have their own synchronization delays and limitations.
+
+## Section 4: Human control
+
+### Heading
+
+**Automation should give you more control, not less.**
+
+Mupezeni's AI workers should operate within defined permissions.
+
+Depending on the workflow, actions may include:
+
+- Reading authorized product and inventory information.
+- Drafting customer replies.
+- Preparing marketing content.
+- Coordinating supported catalog updates.
+- Summarizing business activity.
+- Requesting approval before taking sensitive or externally visible actions.
+
+Important actions should be logged, and workers should verify results instead of assuming that a requested action succeeded.
+
+**[Explore AI Workers]**
+:::
+
+### Design recommendation
+
+Use a sticky side navigation on desktop with sections for Sales, Inventory, Finance, Channels and AI Workers.
+
+As the visitor scrolls, the central product visualization should change to match the section.
+
+On mobile, replace the sticky side navigation with a simple horizontal tab row or collapsible sections.
+
+---
+
+# PAGE 3: AI WORKERS
+
+This page is where the product becomes tangible.
+
+Instead of describing AI workers as magical employees who can do anything, demonstrate exactly what each worker does, what information it uses and what the human remains responsible for.
+
+## Hero
+
+# AI workers for the work that keeps your business busy.
+
+Customer questions. Product updates. Marketing tasks. Follow-ups. Operational reporting.
+
+Mupezeni is designed to help you delegate defined business tasks to AI workers that use authorized information and approved tools to get work done.
+
+You set the boundaries. The workers handle the work they are permitted to perform.
+
+**[Watch the Demonstrations]**
+
+## Worker 1: Customer support
+
+**Headline:** Answer customer questions with business context.
+
+A customer asks about a product, price or availability.
+
+An authorized customer support worker can retrieve relevant information from connected business records and respond through supported communication channels.
+
+### Demonstration storyboard
+
+**Scene 1:** A WhatsApp-style customer conversation appears.
+
+Customer: "Hi, do you have this product in stock?"
+
+**Scene 2:** The AI worker checks the authorized product record.
+
+**Scene 3:** The interface displays the verified product information.
+
+**Scene 4:** A response is prepared and, if the workflow permits, sent.
+
+**Scene 5:** The demonstration shows the interaction and relevant action log.
+
+The demo must use sample data unless it is connected to a real, authorized environment.
+
+## Worker 2: Catalog management
+
+**Headline:** Spend less time repeating product updates.
+
+A product's price, description or availability changes.
+
+The catalog worker helps coordinate the relevant updates across supported destinations, while reporting failures or actions that require human intervention.
+
+Show the product record, the update workflow and the result.
+
+Do not show a successful external update unless the integration has actually completed it.
+
+## Worker 3: Marketing
+
+**Headline:** Turn product information into marketing work.
+
+The marketing worker can help prepare product-focused content and campaign ideas using available product information and business priorities.
+
+Show:
+
+1. The product record.
+2. A proposed campaign.
+3. A draft caption or creative brief.
+4. A human review step.
+5. The publishing workflow, if the relevant integration is available.
+
+The page should distinguish between drafting content and actually publishing it.
+
+## Worker 4: Sales and follow-up
+
+**Headline:** Keep customer follow-ups from disappearing into chat history.
+
+Show how a supported workflow can organize customer enquiries, identify a follow-up task and prepare an appropriate message.
+
+Where automated messaging is involved, the workflow must respect consent, channel policies and applicable requirements.
+
+## Worker 5: Business operations
+
+**Headline:** Know what needs your attention.
+
+The operations worker helps surface relevant information, summarize activity and identify tasks that require action.
+
+Examples could include low-stock alerts, incomplete operational records or pending tasks, depending on the implemented capabilities.
+
+## Worker 6: Business intelligence
+
+**Headline:** Turn business records into useful answers.
+
+Show an owner asking:
+
+"Which products sold the most this week?"
+
+The system queries the relevant sales data and displays a result with a clear date range and the underlying records or calculation.
+
+Other possible questions:
+
+- Which products are running low?
+- What were total sales last week?
+- Which orders remain unpaid?
+- What is the estimated gross profit on recorded sales?
+
+Only demonstrate questions that the system can answer correctly using the available data.
+
+### Final CTA
+
+**Give repetitive work a defined workflow.**
+
+[Talk to Mupezeni]
+
+---
+
+# PAGE 4: HOW IT WORKS
+
+This page should remove uncertainty about implementation.
+
+## Hero
+
+# From disconnected operations to a connected retail system.
+
+We implement and launch Mupezeni for your business within 4–6 weeks.
+
+You sign an agreement before implementation begins. You pay K2,000 for your first month when we launch the solution, with a 30-day money-back guarantee.
+
+**[Start a Conversation]**
+
+## Step 1: Understand the business
+
+We learn how your business handles products, sales, stock, customer conversations and operational records.
+
+We identify the relevant workflows, existing tools and supported integrations.
+
+## Step 2: Prepare the system
+
+We configure Mupezeni for the relevant business workflows, connect supported systems and prepare the data required for implementation.
+
+## Step 3: Test the workflows
+
+We verify the important workflows, including how data moves between relevant components and how exceptions are handled.
+
+Where external integrations are involved, we test the supported actions and verify their outcomes.
+
+## Step 4: Launch
+
+We launch Mupezeni for your business within the agreed implementation process.
+
+Your first month's K2,000 payment is due at launch.
+
+## Step 5: Evaluate
+
+You have a 30-day money-back guarantee under the terms provided in the agreement.
+
+The agreement should explain when the guarantee starts, how a refund is requested, what the refund covers and how the monthly subscription continues after the guarantee period.
+
+### Visual design
+
+Create a horizontal timeline on desktop and a vertical timeline on mobile.
+
+Each step should have a small animated visual showing the activity, not just an icon.
+
+The final scene should transition from the implementation timeline into a live-looking product dashboard.
+
+---
+
+# PAGE 5: PRICING
+
+Pricing should be direct. No mysterious "contact sales for pricing" wall.
+
+## Hero
+
+# A more connected way to run your retail business.
+
+## K2,000 per month
+
+Mupezeni brings your relevant retail workflows, business information and supported AI-worker capabilities into one connected operating system.
+
+We implement and launch Mupezeni for your business within 4–6 weeks.
+
+**You pay for your first month when we launch.**
+
+A 30-day money-back guarantee applies under the terms of your agreement.
+
+**[Discuss Your Business]**
+
+## What's included
+
+The implementation and subscription scope should clearly identify which of these capabilities are included for the business:
+
+- Digital sales and order workflows.
+- Product and inventory management.
+- Operational financial reporting.
+- Supported digital-channel integrations.
+- Configured AI-worker workflows.
+- Relevant business reporting and summaries.
+- Implementation, configuration and launch.
+- Applicable support and ongoing service.
+
+**Important:** The published package must reflect the actual offer. Do not imply that every AI worker, external integration, channel or custom workflow is included without limitation.
+
+## How payment works
+
+**01. Sign the agreement**
+
+The agreement establishes the commercial terms before implementation begins.
+
+**02. We implement and launch**
+
+Implementation takes 4–6 weeks, subject to the agreed scope and dependencies.
+
+**03. Pay at launch**
+
+Your first monthly payment of K2,000 is due when Mupezeni launches for your business.
+
+**04. Evaluate for 30 days**
+
+The money-back guarantee applies according to the written terms.
+
+## Frequently asked questions
+
+**Do I pay before implementation?**
+
+No. You sign the agreement before implementation begins, but your first monthly payment is due when Mupezeni launches for your business.
+
+**How long does implementation take?**
+
+The expected implementation period is 4–6 weeks.
+
+**What happens if Mupezeni isn't right for my business?**
+
+A 30-day money-back guarantee applies after launch, subject to the written terms of your agreement.
+
+**Does Mupezeni work with every platform?**
+
+No. Available capabilities depend on the integrations that have been implemented, tested and authorized. We will clarify the supported workflows relevant to your business.
+
+**Does Mupezeni replace my accountant?**
+
+Mupezeni can provide operational financial information from available business records. It should not be treated as a substitute for professional accounting, tax advice or statutory reporting unless the relevant capabilities and arrangements are explicitly established.
+
+**Can I use Mupezeni if my business sells through WhatsApp?**
+
+Mupezeni is designed to support connected retail workflows involving digital channels. The specific WhatsApp features available depend on the configured and authorized integration.
+
+**[Have Another Question? Contact Us]**
+:::
+
+---
+
+# PAGE 6: ABOUT MUPEZENI
+
+This page should tell visitors why the company exists and what it believes about retail.
+
+## Hero
+
+# Retail businesses deserve better systems.
+
+Mupezeni is building an intelligent operating system for retail businesses, beginning in Zambia and looking toward the wider African market.
+
+We believe business owners should not have to spend their days manually connecting information that should already work together.
+
+Sales, stock, finances, digital channels and customer conversations are different parts of the same business. They should operate with a shared understanding of what is happening.
+
+Mupezeni exists to help make that possible.
+
+## Section: The problem we see
+
+### The owner becomes the operating system.
+
+A customer sends a message. Someone checks inventory. A sale gets recorded somewhere else. A catalog needs updating. The owner still has to make sure every piece agrees.
+
+As the business grows, these small manual tasks accumulate.
+
+The problem is not necessarily that a business lacks software.
+
+**The problem is that its software may not work together.**
+
+## Section: Our approach
+
+### Connect first. Automate responsibly.
+
+We approach retail operations as a connected system.
+
+That means organizing business information, establishing dependable workflows and using AI workers where they can perform defined tasks safely and usefully.
+
+We believe automation should have boundaries, actions should be verifiable, and business owners should retain control over important decisions.
+
+## Section: Our direction
+
+### Built in Zambia. Designed with African retail in mind.
+
+Mupezeni is starting with the operational realities of retailers in Zambia.
+
+We want to understand how businesses sell, manage products, serve customers and make decisions, then build practical technology around those needs.
+
+Our ambition is to help retail businesses increase their operational capacity without making every additional sale create an equal amount of additional administrative work.
+
+## Section: What we are building
+
+- A connected foundation for retail operations.
+- Practical AI workers for defined business tasks.
+- Better connections between business information and digital channels.
+- Clearer operational reporting.
+- Systems that can grow alongside the businesses using them.
+
+### Closing statement
+
+**We are building technology that gives retail businesses more room to grow.**
+
+[Meet the Founder]
+:::
+
+---
+
+# PAGE 7: THE FOUNDER
+
+We have one founder profile established in the information available to us: **Ernest Zimba**.
+
+The page should introduce him as the person building Mupezeni, explain his technical focus and connect his work to the problem the company is solving. It should not invent degrees, employment history, customer success stories or a co-founder.
+
+## Visual direction
+
+This should feel personal and founder-led.
+
+Use an authentic portrait of Ernest rather than an AI-generated professional headshot.
+
+Pair the portrait with a simple editorial layout, a short founder statement and a visual of the product being built.
+
+If you have development footage, customer discovery footage or a genuine demonstration, use it here.
+
+## Full page copy
+
+# Building a more connected future for African retail.
+
+**Ernest Zimba**  
+Founder, Mupezeni
+
+I'm building Mupezeni around a problem that deserves more attention: the amount of manual work retail businesses take on because their systems don't work together.
+
+A business can have customers messaging on WhatsApp, products in a catalog, sales in one application and inventory in another. But someone still has to connect those pieces.
+
+That person is often the business owner.
+
+I want to help change that.
+
+## Why Mupezeni?
+
+My focus is on building practical AI systems that can do useful work inside real business operations.
+
+For retail, that means more than adding a chatbot to a website.
+
+It means connecting business information, creating dependable workflows and giving AI workers access to the tools and information they need to perform defined tasks.
+
+A customer support worker should be able to use authorized product information. A catalog workflow should understand where product information comes from. An operational report should be grounded in actual business records.
+
+The technology matters, but so does the way it fits into the business.
+
+## What I'm building
+
+Mupezeni is being developed as an intelligent operating system for retail, bringing sales, inventory, operational finances, digital channels and AI workers into a more connected environment.
+
+I'm approaching this from the ground up: understanding retail workflows, building the technology and testing whether it solves problems businesses are willing to pay to solve.
+
+The goal is not to automate everything simply because automation is possible.
+
+The goal is to make the business easier to operate.
+
+## The bigger ambition
+
+Mupezeni starts in Zambia.
+
+The longer-term ambition is to build practical technology for retail businesses across Africa, grounded in how those businesses actually operate rather than forcing them into disconnected workflows.
+
+That starts with listening to business owners, testing our assumptions and building systems that earn their place in everyday operations.
+
+**I'm building Mupezeni one real business problem at a time.**
+
+Want to discuss your business or see what we're building?
+
+**[Contact Mupezeni]**
+
+Email: hello.mupezeni@gmail.com  
+WhatsApp: +260 776 091 393
+
+### Add a founder video
+
+A short video of Ernest speaking directly to the camera would make this page much stronger.
+
+Suggested opening:
+
+> "I'm Ernest Zimba, founder of Mupezeni. We're building an intelligent operating system for retail businesses, starting in Zambia. The problem we're focused on is simple: business owners are still spending too much time connecting systems that should work together."
+
+Keep the video authentic, direct and around 45–75 seconds.
+
+---
+
+# PAGE 8: CONTACT
+
+The contact page should be a conversion point, not just a page with an email address.
+
+## Full copy
+
+# Let's talk about your retail business.
+
+Tell us how your business manages sales, inventory, customer conversations and digital channels.
+
+We'll discuss your current workflows, identify where disconnected systems create unnecessary work and explain how Mupezeni may fit into your operations.
+
+**WhatsApp:** +260 776 091 393  
+**Email:** hello.mupezeni@gmail.com
+
+## Prefer WhatsApp?
+
+Start a conversation directly with the Mupezeni team.
+
+**[Chat With Us on WhatsApp]**
+
+## Prefer email?
+
+Send us a message describing your business and what you'd like to improve.
+
+**[Email Mupezeni]**
+
+## What happens next?
+
+1. We learn about your business and current workflows.
+2. We discuss relevant Mupezeni capabilities and integration requirements.
+3. If there is a fit, we explain the implementation process and commercial terms.
+
+### Contact implementation
+
+The buttons should open the appropriate contact destinations:
+
+- WhatsApp: a prefilled message to the supplied number.
+- Email: a new message addressed to the supplied email.
+- Demo booking: a booking form or scheduling workflow, once one is configured.
+
+The WhatsApp message could say:
+
+> Hi Mupezeni, I'd like to learn how Mupezeni could help my retail business. My business is [business name], and one of the main challenges we're facing is [challenge].
+
+---
+
+# 3. The visual design system
+
+The site should feel like a serious African technology company with a distinctive visual identity.
+
+Not a generic SaaS template. Not a flashy AI landing page that looks impressive but explains very little.
+
+## Colour palette
+
+Use the existing brand direction:
+
+| Role | Colour |
+|---|---|
+| Primary | Terracotta |
+| Main text | Near-black |
+| Background | Warm off-white |
+| Secondary surface | Muted sand |
+| Borders | Soft warm grey |
+| Success states | Restrained green |
+| Attention states | Muted amber |
+
+Suggested starting values for the design system:
+
+- Terracotta: `#B85F45`
+- Near-black: `#191817`
+- Warm off-white: `#F8F5F0`
+- Sand: `#EDE4D9`
+- Muted grey: `#817B75`
+
+These are design starting points. Match the final palette to the existing Mupezeni logo.
+
+## Typography
+
+Use an editorial heading typeface paired with a highly readable interface font.
+
+For example:
+
+- **Headings:** Manrope or a similarly expressive sans-serif.
+- **Body and interface:** Inter or a similar readable sans-serif.
+- **Large hero text:** Bold, with controlled line lengths and generous spacing.
+
+The typography should carry the page's personality without sacrificing usability.
+
+## Imagery
+
+Use three kinds of imagery.
+
+### 1. Real retail photography
+
+Show real African retail environments:
+
+- A shop owner handling a customer order.
+- A retailer checking stock.
+- A team preparing products.
+- A business owner reviewing sales.
+- A customer browsing products.
+
+Avoid portraying every business as a large supermarket. The imagery should reflect the variety of retail businesses the product serves.
+
+### 2. Product interface imagery
+
+Show the actual Mupezeni product:
+
+- Sales dashboard.
+- Inventory records.
+- Product catalog.
+- AI worker interface.
+- Customer conversation.
+- Operational reports.
+
+Where a screen is a concept rather than a functioning feature, label it as a concept or demonstration.
+
+### 3. Cinematic transition imagery
+
+Use carefully selected scenes to connect sections:
+
+- Product cards moving into an inventory view.
+- A customer message transitioning into a verified product record.
+- Disconnected interfaces aligning into a single dashboard.
+- A product's stock count updating after a recorded sale.
+
+The visual effects should explain how the product works.
+
+---
+
+# 4. Higgsfield-inspired transitions and motion design
+
+The goal is to borrow the **cinematic storytelling and motion language**, not to turn every scroll into an effects reel.
+
+Use motion where it communicates a change.
+
+## Transition 1: Disconnected to connected
+
+**Location:** Home hero.
+
+Begin with several floating interface fragments:
+
+- Customer messages.
+- Product information.
+- Sales records.
+- Inventory.
+
+As the user scrolls, the fragments move into alignment and resolve into the Mupezeni interface.
+
+**Meaning:** The business moves from scattered information to connected operations.
+
+## Transition 2: Message to verified answer
+
+**Location:** AI customer support demonstration.
+
+A customer message enters the screen. The worker retrieves a product record. The relevant information highlights, then the response appears.
+
+**Meaning:** The AI worker uses business information rather than guessing.
+
+## Transition 3: Sale to inventory update
+
+**Location:** Platform page.
+
+A sale is recorded. The relevant stock value changes. The sales summary updates.
+
+**Meaning:** Connected workflows reduce the need to repeat the same update manually.
+
+Only use this animation to represent a workflow that exists or a clearly labelled concept.
+
+## Transition 4: Product transformation
+
+**Location:** AI catalog section.
+
+A product record expands into its relevant catalog representations.
+
+The product name, price and image remain visually consistent while the layouts change.
+
+**Meaning:** One central product record can support multiple connected destinations.
+
+## Transition 5: Founder story
+
+**Location:** Founder page.
+
+Use a gentle image reveal and a subtle text transition. Keep the founder's portrait natural and unaltered.
+
+**Meaning:** A human is building the company, not an anonymous AI-generated brand.
+
+## Motion principles
+
+- Use smooth easing and short, purposeful transitions.
+- Keep text readable while elements move.
+- Prefer scroll-triggered reveals over constant animation.
+- Respect reduced-motion accessibility settings.
+- Keep mobile transitions lightweight.
+- Never make visitors wait for a long animation before they can use the site.
+- Do not sacrifice loading speed for visual spectacle.
+
+The website should feel cinematic, but the product must remain the main character.
+
+---
+
+# 5. The demonstration strategy
+
+This is where Mupezeni can separate itself from websites that simply make promises about AI.
+
+Build three polished, short demonstrations first.
+
+| Demo | Length | What it proves |
+|---|---:|---|
+| Sale and inventory workflow | 30–45 seconds | How a recorded sale relates to stock and sales records |
+| AI customer support | 30–45 seconds | How an AI worker retrieves authorized product information |
+| Product catalog workflow | 30–45 seconds | How product information can be prepared for supported destinations |
+
+Each demo should have:
+
+1. A clear problem.
+2. The action that begins the workflow.
+3. The relevant product interface.
+4. The result.
+5. An explanation of what is automated and what requires approval.
+
+Use sample business data if the product is not yet connected to a live customer environment.
+
+**Do not manufacture testimonials, logos of customers, performance statistics or claims that the product has already delivered results.**
+
+As Mupezeni gains customers, replace illustrative demonstrations with real, permissioned case studies.
+
+---
+
+# 6. The numbers we should collect and publish
+
+You specifically asked for tangible numbers: customers buying through WhatsApp, hours spent juggling tools and similar measures.
+
+I agree. But the right numbers are not invented industry statistics. They are measurable facts about the businesses Mupezeni serves.
+
+I would build a small evidence programme around these metrics.
+
+| Metric | How to measure it | Why it matters |
+|---|---|---|
+| Orders received through WhatsApp per week | Count actual orders over a defined period | Establishes the importance of the channel |
+| Percentage of total orders from WhatsApp | WhatsApp orders divided by total orders | Shows channel dependence |
+| Average time to process an order | Measure order handling time | Quantifies administrative workload |
+| Time spent updating product information | Track time over a representative week | Measures repetitive catalog work |
+| Time spent reconciling sales and inventory | Record time spent on the task | Quantifies operational friction |
+| Average customer response time | Measure enquiry-to-response time | Shows customer service performance |
+| Enquiries converted into orders | Track enquiry and order records | Helps understand sales conversion |
+| Stock discrepancies | Compare recorded stock against physical counts | Measures inventory reliability |
+| Percentage of supported workflow actions completed successfully | Count verified successful actions | Measures automation reliability |
+
+For every metric, record the measurement period, sample size and definition.
+
+For example:
+
+> Across 12 interviewed retail businesses, the median reported time spent on manual product updates was X hours per week.
+
+We should only publish a statement like that after collecting and analysing the actual data. We should also distinguish reported estimates from measured observations.
+
+### The most valuable first number
+
+I would prioritize:
+
+**"How many hours does a retailer spend each week keeping disconnected systems in sync?"**
+
+It directly expresses the problem Mupezeni is built to solve.
+
+The second would be:
+
+**"How many customer orders does the business receive through WhatsApp each week?"**
+
+It helps establish how important WhatsApp is to the business and provides a useful starting point for measuring the relevant workflow.
+
+Together, these metrics can turn an abstract technology proposition into a concrete business conversation.
+
+---
+
+# 7. What I would build first
+
+Don't attempt to build every page, animation and calculator simultaneously.
+
+The best sequence is to establish the core website and then layer on the cinematic experience.
+
+### Phase 1: Core website
+
+Build:
+
+1. Home page.
+2. Platform page.
+3. AI Workers page.
+4. How It Works page.
+5. Pricing page.
+6. About and Founder pages.
+7. Contact page.
+
+Ensure the copy, contact details and calls to action are consistent.
+
+### Phase 2: Product evidence
+
+Create:
+
+- A working product dashboard demonstration.
+- A sale-to-inventory workflow demonstration.
+- An AI customer support demonstration.
+- A catalog workflow demonstration.
+
+Use accurate interface states and realistic sample data.
+
+### Phase 3: Interactive experience
+
+Add:
+
+- The manual-work calculator.
+- The WhatsApp order-value calculator.
+- Interactive product demonstrations.
+- Scroll-triggered transitions.
+- Animated workflow diagrams.
+
+### Phase 4: Proof and refinement
+
+As businesses begin using Mupezeni, gather:
+
+- Measured implementation timelines.
+- Actual workflow performance.
+- Verified customer outcomes.
+- Permissioned testimonials.
+- Case studies with baseline and post-implementation measurements.
+
+Use that evidence to improve the copy and the product demonstrations.
+
+---
+
+# 8. A few strategic decisions I would not compromise on
+
+**First, the website should sell a connected retail operating system, not six unrelated AI agents.** The workers matter because of what they can do with connected business information.
+
+**Second, demonstrate real workflows before spending heavily on cinematic effects.** A beautiful animation of a feature that does not exist will create a credibility problem.
+
+**Third, use the calculator to quantify the visitor's problem, not to manufacture a promised saving.** Let the visitor enter their own numbers. Any estimated savings should be labelled as a scenario, not a guaranteed result.
+
+**Fourth, keep the K2,000 offer clear.** The customer signs before implementation, Mupezeni implements and launches over 4–6 weeks, the first payment is due at launch, and the 30-day money-back guarantee applies under the written terms.
+
+**Fifth, make the founder visible.** An authentic founder video, clear technical direction and honest product demonstrations can do more for an early-stage company than a page full of unsupported claims.
+
+---
+
+## The next concrete step
+
+Because Mupezeni already has an existing website and frontend repository, I would **redesign the existing implementation rather than start a disconnected new project**.
+
+The order should be:
+
+1. Audit the current pages and reusable components.
+2. Map the new page architecture onto the existing frontend.
+3. Implement the homepage and shared design system.
+4. Add the remaining pages.
+5. Connect the real product demonstrations.
+6. Add the calculator.
+7. Finish the motion design and responsive behaviour.
+8. Verify every CTA, contact link and displayed product claim.
+
+The existing site is available at [Mupezeni's current website](https://mupezeni.pages.dev?utm_source=chatgpt.com).
+
+**One final distinction:** the copy and design direction above are ready to guide the redesign, but the website itself has not yet been modified by this response. The next implementation step is to apply this architecture to the existing Mupezeni repository, preserving working functionality and clearly distinguishing implemented features from planned ones.
