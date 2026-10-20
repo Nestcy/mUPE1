@@ -23,7 +23,7 @@ export const PricingPage: React.FC<PricingPageProps> = ({ onNavigate, onOpenDemo
   const faqs = [
     {
       q: 'Do I pay before implementation begins?',
-      a: 'No. You sign the agreement before implementation begins to confirm scope and expectations, but your first monthly payment of K2,000 is due only when Mupezeni launches live for your business.'
+      a: 'No. You sign the agreement before implementation begins to confirm scope and expectations, but your first monthly payment of K1,000 is due only when Mupezeni launches live for your business.'
     },
     {
       q: 'How long does implementation take?',
@@ -89,7 +89,7 @@ export const PricingPage: React.FC<PricingPageProps> = ({ onNavigate, onOpenDemo
 
                 <div className="space-y-1">
                   <div className="font-mono text-5xl sm:text-6xl font-extrabold text-white">
-                    K2,000 <span className="text-lg font-normal text-[#817B75]">/ month</span>
+                    K1,000 <span className="text-lg font-normal text-[#817B75]">/ month</span>
                   </div>
                   <p className="text-xs text-[#D9CEBF] pt-1">
                     First month's payment is due <strong className="text-white underline">when we launch</strong> for your business.
@@ -145,7 +145,7 @@ export const PricingPage: React.FC<PricingPageProps> = ({ onNavigate, onOpenDemo
                     <span className="font-mono font-bold text-emerald-400 bg-emerald-950 px-2 py-0.5 rounded">03</span>
                     <div>
                       <strong className="text-white block">Pay at Launch</strong>
-                      <span className="text-[#817B75]">Your first K2,000 monthly subscription is due when Mupezeni goes live.</span>
+                      <span className="text-[#817B75]">Your first K1,000 monthly subscription is due when Mupezeni goes live.</span>
                     </div>
                   </div>
 

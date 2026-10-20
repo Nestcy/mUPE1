@@ -41,32 +41,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenD
 
   return (
     <header className="sticky top-0 z-50 bg-[#F8F5F0]/90 backdrop-blur-md border-b border-[#E4DCD3] transition-all">
-      {/* Top Banner with Zambian Retail Context & Commercial Offer */}
-      <div className="bg-[#191817] text-[#EDE4D9] text-xs py-1.5 px-4">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-[#B85F45] animate-pulse"></span>
-            <span className="font-medium tracking-wide">
-              Mupezeni Operating System for African Retail
-            </span>
-            <span className="hidden md:inline text-[#817B75]">•</span>
-            <span className="hidden md:inline text-[#D9CEBF]">
-              K2,000 / month • Launch in 4–6 weeks • 30-day money-back guarantee
-            </span>
-          </div>
-          <div className="flex items-center gap-3">
-            <a 
-              href="https://wa.me/260776091393?text=Hi%20Mupezeni%2C%20I'd%20like%20to%20learn%20how%20Mupezeni%20could%20help%20my%20retail%20business." 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-400 hover:text-emerald-300 transition-colors"
-            >
-              <MessageCircle className="w-3.5 h-3.5" />
-              <span>WhatsApp: +260 776 091 393</span>
-            </a>
-          </div>
-        </div>
-      </div>
+
 
       {/* Main Navigation Bar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 flex items-center justify-between">
@@ -75,9 +50,14 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenD
           onClick={() => handleNav('home')} 
           className="flex items-center gap-3 text-left group focus:outline-none"
         >
-          {/* Terracotta Monogram */}
-          <div className="w-9 h-9 rounded-lg bg-[#B85F45] text-white flex items-center justify-center font-bold text-lg shadow-sm group-hover:bg-[#97442F] transition-colors">
-            M
+          {/* Brand Logo Image */}
+          <div className="h-10 px-2 rounded-xl bg-white flex items-center justify-center shadow-xs group-hover:scale-105 transition-all shrink-0">
+            <img 
+              src="/logo.png" 
+              alt="MUPEZENI Logo" 
+              style={{ height: '30px' }}
+              className="h-[30px] w-auto object-contain" 
+            />
           </div>
           <div className="flex flex-col">
             <span className="font-extrabold tracking-wider text-xl text-[#191817] leading-none">

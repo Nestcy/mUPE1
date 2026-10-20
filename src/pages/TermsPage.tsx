@@ -34,7 +34,7 @@ export const TermsPage: React.FC<TermsPageProps> = ({ onNavigate, onOpenDemo }) 
           <div className="space-y-4">
             <h2 className="text-2xl font-bold text-[#191817] flex items-center gap-2">
               <span className="w-7 h-7 rounded-lg bg-[#B85F45] text-white flex items-center justify-center font-mono text-xs">01</span>
-              <span>The Commercial Offer (K2,000 / month)</span>
+              <span>The Commercial Offer (K1,000 / month)</span>
             </h2>
             <div className="p-4 rounded-xl bg-[#F8F5F0] border border-[#E4DCD3] space-y-2 text-xs text-[#817B75] leading-relaxed">
               <p>
@@ -44,10 +44,10 @@ export const TermsPage: React.FC<TermsPageProps> = ({ onNavigate, onOpenDemo }) 
                 • <strong>Implementation Period:</strong> Expected implementation and configuration takes 4–6 weeks.
               </p>
               <p>
-                • <strong>Zero Upfront Implementation Fee:</strong> You do not pay before or during the build phase. Your first monthly subscription fee of K2,000 is due when Mupezeni launches live for your store.
+                • <strong>Zero Upfront Implementation Fee:</strong> You do not pay before or during the build phase. Your first monthly subscription fee of K1,000 is due when Mupezeni launches live for your store.
               </p>
               <p>
-                • <strong>Ongoing Subscription:</strong> The monthly subscription of K2,000 covers ongoing platform access, hosting, system maintenance, and authorized AI-worker execution.
+                • <strong>Ongoing Subscription:</strong> The monthly subscription of K1,000 covers ongoing platform access, hosting, system maintenance, and authorized AI-worker execution.
               </p>
             </div>
           </div>
@@ -72,7 +72,7 @@ export const TermsPage: React.FC<TermsPageProps> = ({ onNavigate, onOpenDemo }) 
                   <strong>How to Request:</strong> If you determine within the first 30 days that the connected workflows do not meet the agreed commercial scope, submit a written refund request via email to <em>hello.mupezeni@gmail.com</em> or directly to your assigned implementation manager on WhatsApp.
                 </li>
                 <li>
-                  <strong>Refund Scope:</strong> 100% of the first month's K2,000 subscription fee is refunded promptly without penalty.
+                  <strong>Refund Scope:</strong> 100% of the first month's K1,000 subscription fee is refunded promptly without penalty.
                 </li>
                 <li>
                   <strong>Post-Guarantee:</strong> After the 30-day evaluation period, the standard monthly subscription continues on a month-to-month basis with no long-term lock-in contract.

@@ -120,7 +120,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate, onOpenDemo
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="font-mono font-bold text-[#B85F45] bg-white px-1.5 py-0.5 rounded border border-[#D9CEBF]">3</span>
-                    <span>If there is a fit, we explain the 4–6 week implementation plan and commercial terms (K2,000/mo, paid at launch).</span>
+                    <span>If there is a fit, we explain the 4–6 week implementation plan and commercial terms (K1,000/mo, paid at launch).</span>
                   </li>
                 </ol>
               </div>
@@ -240,7 +240,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate, onOpenDemo
 
                   <div className="flex items-center gap-2 text-[11px] text-[#817B75] pt-1">
                     <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>No upfront fee. K2,000/month only due when Mupezeni launches live for you.</span>
+                    <span>No upfront fee. K1,000/month only due when Mupezeni launches live for you.</span>
                   </div>
                 </form>
               )}

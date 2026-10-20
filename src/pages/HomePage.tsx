@@ -105,8 +105,10 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenDemo }) =>
                 <div className="relative rounded-2xl bg-[#191817] border border-[#3A3632] shadow-2xl p-5 sm:p-6 text-white font-sans overflow-hidden">
                   {/* Window Bar */}
                   <div className="flex items-center justify-between pb-4 border-b border-[#2C2926] mb-4 text-xs font-mono">
-                    <div className="flex items-center gap-2">
-                      <div className="w-3 h-3 rounded-full bg-[#B85F45]"></div>
+                    <div className="flex items-center gap-2.5">
+                      <div className="w-5 h-5 rounded-md bg-white p-0.5 flex items-center justify-center shrink-0">
+                        <img src="/logo.png" alt="Mupezeni" className="w-full h-full object-contain" />
+                      </div>
                       <span className="font-bold text-[#EDE4D9]">MUPEZENI OS • LUSAKA DISPATCH</span>
                     </div>
                     <span className="px-2 py-0.5 rounded text-[10px] bg-emerald-950 text-emerald-400 border border-emerald-900/60 font-semibold">
@@ -428,7 +430,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenDemo }) =>
                   Get Mupezeni running in your business in 4–6 weeks.
                 </h2>
                 <p className="text-sm sm:text-base text-[#D9CEBF] leading-relaxed">
-                  We implement and launch Mupezeni for your business within 4–6 weeks. You sign an agreement before implementation begins. You pay <strong>K2,000 for your first month when we launch the solution</strong>, with a 30-day money-back guarantee.
+                  We implement and launch Mupezeni for your business within 4–6 weeks. You sign an agreement before implementation begins. You pay <strong>K1,000 for your first month when we launch the solution</strong>, with a 30-day money-back guarantee.
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
@@ -447,7 +449,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenDemo }) =>
                   <div className="bg-[#24211E] p-4 rounded-xl border border-[#3A3632]">
                     <div className="text-xs font-mono font-bold text-emerald-400 mb-1">STEP 03</div>
                     <div className="text-sm font-bold text-white mb-1">Launch & Evaluate</div>
-                    <p className="text-[11px] text-[#817B75]">First K2,000 payment due at launch. 30-day money-back guarantee starts.</p>
+                    <p className="text-[11px] text-[#817B75]">First K1,000 payment due at launch. 30-day money-back guarantee starts.</p>
                   </div>
                 </div>
               </div>
@@ -458,7 +460,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenDemo }) =>
                   All-Inclusive Retail Monthly
                 </span>
                 <div className="font-mono text-5xl font-extrabold text-white">
-                  K2,000 <span className="text-base font-normal text-[#817B75]">/ month</span>
+                  K1,000 <span className="text-base font-normal text-[#817B75]">/ month</span>
                 </div>
                 <div className="text-xs text-[#D9CEBF] space-y-1">
                   <div>✓ Implementation and launch within 4–6 weeks</div>

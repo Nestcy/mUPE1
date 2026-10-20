@@ -69,14 +69,14 @@ export const HowItWorksPage: React.FC<HowItWorksPageProps> = ({ onNavigate, onOp
       title: 'Launch',
       timeline: 'Week 5–6',
       tagline: 'Live Deployment in Your Store',
-      description: 'We launch Mupezeni for your business within the agreed implementation process. Your first month\'s K2,000 payment is due at launch.',
+      description: 'We launch Mupezeni for your business within the agreed implementation process. Your first month\'s K1,000 payment is due at launch.',
       deliverables: [
         'Switchover to live customer conversations and sales recording',
         'Mupezeni operational dashboard active on store computers & phones',
         'Daily operational margin and gross profit calculations running',
         'Direct priority engineering support channel via WhatsApp'
       ],
-      checkpoint: 'First month payment of K2,000 due upon live launch.'
+      checkpoint: 'First month payment of K1,000 due upon live launch.'
     },
     {
       number: '05',
@@ -88,7 +88,7 @@ export const HowItWorksPage: React.FC<HowItWorksPageProps> = ({ onNavigate, onOp
         '30 days of live operational use to measure real time savings',
         'Weekly check-in to adjust worker boundaries or add SKUs',
         'Transparent refund terms if Mupezeni does not meet stated scope',
-        'Smooth continuation at K2,000/month if satisfied'
+        'Smooth continuation at K1,000/month if satisfied'
       ],
       checkpoint: '100% money-back guarantee protected under written terms.'
     }
@@ -115,7 +115,7 @@ export const HowItWorksPage: React.FC<HowItWorksPageProps> = ({ onNavigate, onOp
                 <span>Our Clear Commercial Commitment</span>
               </div>
               <p className="text-xs text-[#817B75] leading-relaxed">
-                You sign an agreement before implementation begins. You pay <strong>K2,000 for your first month when we launch the solution</strong>, with a 30-day money-back guarantee. No upfront implementation fee.
+                You sign an agreement before implementation begins. You pay <strong>K1,000 for your first month when we launch the solution</strong>, with a 30-day money-back guarantee. No upfront implementation fee.
               </p>
             </div>
             <div className="pt-2">
@@ -219,7 +219,7 @@ export const HowItWorksPage: React.FC<HowItWorksPageProps> = ({ onNavigate, onOp
                   {steps[activeStep].number === '01' && 'No Upfront Fee Required'}
                   {steps[activeStep].number === '02' && 'Configuration in Progress'}
                   {steps[activeStep].number === '03' && 'Owner Review & Testing'}
-                  {steps[activeStep].number === '04' && 'First Payment at Launch (K2,000)'}
+                  {steps[activeStep].number === '04' && 'First Payment at Launch (K1,000)'}
                   {steps[activeStep].number === '05' && '30-Day Money-Back Guarantee'}
                 </h4>
                 <p className="text-xs text-[#D9CEBF] leading-relaxed">
