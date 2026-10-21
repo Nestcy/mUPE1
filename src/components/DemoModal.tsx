@@ -87,11 +87,13 @@ export const DemoModal: React.FC<DemoModalProps> = ({ isOpen, onClose }) => {
             <div>
               {/* Quick WhatsApp Banner */}
               <div className="mb-6 p-4 rounded-xl bg-emerald-50 border border-emerald-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                <div className="flex items-center gap-2.5">
-                  <MessageCircle className="w-5 h-5 text-emerald-700 shrink-0" />
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-emerald-600 shadow-xs shrink-0 bg-[#EDE4D9]">
+                    <img src="/ernest.jpg" alt="Ernest Zimba" className="w-full h-full object-cover object-top" />
+                  </div>
                   <div>
                     <span className="text-xs font-bold text-emerald-900 block">Fastest Response via WhatsApp</span>
-                    <span className="text-xs text-emerald-800">Direct chat with the founder & implementation team</span>
+                    <span className="text-xs text-emerald-800">Direct chat with founder Ernest Zimba & implementation team</span>
                   </div>
                 </div>
                 <a

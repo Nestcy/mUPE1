@@ -39,9 +39,9 @@ export const FounderPage: React.FC<FounderPageProps> = ({ onNavigate, onOpenDemo
                 Building a more connected future for African retail.
               </h1>
 
-              <div className="flex items-center gap-3 pt-1 pb-1">
-                <div className="w-12 h-12 rounded-full bg-[#B85F45] text-white flex items-center justify-center font-bold text-xl shadow-xs">
-                  EZ
+              <div className="flex items-center gap-3.5 pt-1 pb-1">
+                <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-[#B85F45] shadow-sm shrink-0 bg-[#EDE4D9]">
+                  <img src="/ernest.jpg" alt="Ernest Zimba" className="w-full h-full object-cover object-top" />
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-[#191817]">Ernest Zimba</h3>
@@ -90,30 +90,27 @@ export const FounderPage: React.FC<FounderPageProps> = ({ onNavigate, onOpenDemo
                   <span className="text-[#817B75]">Lusaka, Zambia</span>
                 </div>
 
-                {/* Video Preview Card */}
-                <div className="relative aspect-video rounded-2xl bg-[#24211E] border border-[#3A3632] overflow-hidden flex flex-col justify-between p-4 group">
-                  <div className="flex justify-between items-center text-xs">
-                    <span className="px-2 py-0.5 rounded bg-black/60 text-[#D9CEBF] font-mono text-[10px]">
-                      DIRECT MESSAGE • 1:12 MIN
-                    </span>
-                    <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                  </div>
+                {/* Founder Headshot Card */}
+                <div className="relative aspect-[4/5] rounded-2xl overflow-hidden border border-[#3A3632] group shadow-2xl bg-[#24211E]">
+                  <img
+                    src="/ernest.jpg"
+                    alt="Ernest Zimba - Founder & Lead Engineer, Mupezeni"
+                    className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#191817] via-transparent to-black/30 pointer-events-none"></div>
 
-                  <div className="text-center my-auto">
-                    <button
-                      onClick={() => setIsPlayingVideo(!isPlayingVideo)}
-                      className="w-12 h-12 rounded-full bg-[#B85F45] hover:bg-[#97442F] text-white flex items-center justify-center mx-auto shadow-md transition-transform active:scale-95"
-                      aria-label="Play Founder Video Statement"
-                    >
-                      {isPlayingVideo ? <Pause className="w-5 h-5" /> : <Play className="w-5 h-5 ml-0.5" />}
-                    </button>
-                    <span className="text-xs text-[#EDE4D9] font-medium block mt-2">
-                      {isPlayingVideo ? 'Playing Statement...' : 'Listen to Ernest\'s Direct Vision'}
+                  <div className="absolute top-3 left-3">
+                    <span className="px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md text-[#EDE4D9] font-mono text-[10px] border border-white/10 flex items-center gap-1.5 shadow-sm">
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                      Founder & Lead Engineer
                     </span>
                   </div>
 
-                  <div className="text-[11px] text-[#A89F95] font-mono truncate">
-                    "Retail owners spend too much time connecting systems that should work together."
+                  <div className="absolute bottom-3 left-3 right-3 text-white">
+                    <h4 className="font-extrabold text-lg text-white">Ernest Zimba</h4>
+                    <p className="text-xs text-[#D9CEBF] font-medium leading-relaxed">
+                      "Retail owners spend too much time connecting systems that should already work together."
+                    </p>
                   </div>
                 </div>
 

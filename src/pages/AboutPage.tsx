@@ -194,13 +194,22 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenDemo }) 
           <h2 className="text-3xl font-extrabold text-[#191817] tracking-tight">
             We are building technology that gives retail businesses more room to grow.
           </h2>
-          <div className="pt-2">
+          <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="flex items-center gap-3 bg-white p-1.5 pr-4 rounded-full border border-[#D9CEBF] shadow-xs">
+              <div className="w-10 h-10 rounded-full overflow-hidden border border-[#B85F45] shrink-0 bg-[#EDE4D9]">
+                <img src="/ernest.jpg" alt="Ernest Zimba" className="w-full h-full object-cover object-top" />
+              </div>
+              <div className="text-left">
+                <span className="font-bold text-xs text-[#191817] block">Ernest Zimba</span>
+                <span className="text-[10px] text-[#817B75]">Founder, Mupezeni</span>
+              </div>
+            </div>
+
             <button
               onClick={() => onNavigate('founder')}
               className="px-6 py-3 rounded-xl bg-[#191817] hover:bg-[#312E2B] text-white font-bold text-sm inline-flex items-center gap-2 shadow-sm transition-all"
             >
-              <User className="w-4 h-4 text-[#B85F45]" />
-              <span>Meet the Founder (Ernest Zimba)</span>
+              <span>Read Founder's Vision</span>
               <ArrowRight className="w-4 h-4" />
             </button>
           </div>

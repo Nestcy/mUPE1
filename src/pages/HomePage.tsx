@@ -70,9 +70,67 @@ const TYPEWRITER_PHRASES = [
   "Mupezeni • Built in Zambia for African Retail",
 ];
 
+const OPERATIONAL_REALITIES = [
+  {
+    id: 'chat-disconnected',
+    number: '01',
+    tag: 'Disconnected Channels',
+    title: 'Your customers are in the chat. Your business records are somewhere else.',
+    subtitle: 'WhatsApp conversations decoupled from live inventory and sales ledgers',
+    description: 'Orders and enquiries arrive rapidly through WhatsApp, but the information may still need to be entered into inventory, sales records, or another application.',
+    dailyReality: 'A customer chats asking: "Do you have size 42 black boots at Cairo Road?" Store staff has to physically check the back room or call colleagues while the customer waits. Often, by the time staff responds, the customer has moved on.',
+    impacts: [
+      'Slow response times leading to abandoned cart sales',
+      'Accidentally confirming items that were already sold to walk-in shoppers',
+      'Hours spent copy-pasting customer names, phones, and delivery notes'
+    ],
+    fragmentTitle: 'WhatsApp Chat',
+    fragmentStatus: 'Disconnected',
+    fragmentExample: '"I want to buy the black boots" → Requires manual copy to notebook',
+    mupezeniSolution: 'Mupezeni connects your WhatsApp Business API directly to your master inventory and POS. Verified stock levels are retrieved in seconds, and orders are logged into your central queue with automatic payment tracking.'
+  },
+  {
+    id: 'moving-info',
+    number: '02',
+    tag: 'Administrative Overload',
+    title: 'Your team spends time moving information instead of acting on it.',
+    subtitle: 'Routine work turns into an endless chain of manual copy-paste tasks',
+    description: 'Updating products, checking stock across branches, reconciling end-of-day sales, and answering repetitive questions can turn routine work into a chain of manual tasks.',
+    dailyReality: 'When new stock arrives, staff has to record it in a spreadsheet, update WhatsApp catalog items, check POS prices, and message store staff across branches—repeating identical entries four separate times.',
+    impacts: [
+      'Retail owners trapped in 4–6 hours of clerical work daily',
+      'Branch inventory mismatches and out-of-sync product catalogs',
+      'Staff distracted from serving customers and closing transactions'
+    ],
+    fragmentTitle: '3 Separate Tabs',
+    fragmentStatus: 'Friction',
+    fragmentExample: 'WhatsApp ↔ Excel Stock ↔ Mobile Money SMS',
+    mupezeniSolution: 'Enter or scan product updates once in Mupezeni: all branch inventories, WhatsApp catalogs, and storefronts synchronize simultaneously. AI workers handle routine availability questions with approved store policies.'
+  },
+  {
+    id: 'unknown-margins',
+    number: '03',
+    tag: 'Missing Financial Visibility',
+    title: 'You cannot make confident decisions from disconnected information.',
+    subtitle: 'Cash in hand is easily confused with true gross margin without COGS',
+    description: 'If your sales, product costs, expenses and inventory records are incomplete or inconsistent, understanding business performance becomes harder.',
+    dailyReality: 'You took in K15,000 today through Airtel Money and Cash. But after paying suppliers for stock, delivery riders, and shop utilities, what was your actual profit? Without unit-level margin calculations, retailers frequently over-discount expensive inventory.',
+    impacts: [
+      'Unknown true gross margins across product lines',
+      'Unexpected cash crunches when bulk supplier invoices are due',
+      'Difficulty knowing which products drive real profit versus just volume'
+    ],
+    fragmentTitle: 'True Margins',
+    fragmentStatus: 'Unknown',
+    fragmentExample: 'Cash in hand ≠ True gross profit without COGS',
+    mupezeniSolution: 'Every sale automatically pairs with your recorded landed cost price. Real-time dashboards report sales, COGS, and true gross margin by branch and product line without spreadsheet calculations.'
+  }
+];
+
 export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenDemo }) => {
   const [activeDemoIndex, setActiveDemoIndex] = useState(0);
   const [isZoomModalOpen, setIsZoomModalOpen] = useState(false);
+  const [selectedRealityIndex, setSelectedRealityIndex] = useState<number | null>(null);
   const [phraseIndex, setPhraseIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
@@ -102,6 +160,17 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenDemo }) =>
 
     return () => clearTimeout(timer);
   }, [displayedText, isDeleting, phraseIndex]);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setSelectedRealityIndex(null);
+        setIsZoomModalOpen(false);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
 
   return (
     <div className="min-h-screen">
@@ -291,83 +360,45 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenDemo }) =>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Card 1 */}
-            <div className="p-7 rounded-2xl bg-[#F8F5F0] border border-[#E4DCD3] flex flex-col justify-between hover:border-[#B85F45]/60 transition-all group">
-              <div>
-                <div className="w-12 h-12 rounded-xl bg-white border border-[#D9CEBF] flex items-center justify-center text-[#B85F45] font-mono font-bold text-lg mb-6 shadow-xs group-hover:bg-[#B85F45] group-hover:text-white transition-colors">
-                  01
+            {OPERATIONAL_REALITIES.map((reality, idx) => (
+              <div 
+                key={reality.id}
+                onClick={() => setSelectedRealityIndex(idx)}
+                className="p-7 rounded-2xl bg-[#F8F5F0] border border-[#E4DCD3] flex flex-col justify-between hover:border-[#B85F45] hover:shadow-lg transition-all duration-300 group cursor-pointer"
+              >
+                <div>
+                  <div className="w-12 h-12 rounded-xl bg-white border border-[#D9CEBF] flex items-center justify-center text-[#B85F45] font-mono font-bold text-lg mb-6 shadow-xs group-hover:bg-[#B85F45] group-hover:text-white transition-colors">
+                    {reality.number}
+                  </div>
+                  <h3 className="text-xl font-bold text-[#191817] mb-3 leading-snug group-hover:text-[#B85F45] transition-colors">
+                    {reality.title}
+                  </h3>
+                  <p className="text-sm text-[#817B75] leading-relaxed mb-6">
+                    {reality.description}
+                  </p>
                 </div>
-                <h3 className="text-xl font-bold text-[#191817] mb-3 leading-snug">
-                  Your customers are in the chat. Your business records are somewhere else.
-                </h3>
-                <p className="text-sm text-[#817B75] leading-relaxed mb-6">
-                  Orders and enquiries arrive through WhatsApp, but the information may still need to be entered into inventory, sales records or another application.
-                </p>
-              </div>
 
-              {/* Visual fragment representation */}
-              <div className="p-3.5 rounded-xl bg-white border border-[#E4DCD3] text-xs font-mono space-y-2">
-                <div className="flex justify-between items-center text-[#817B75]">
-                  <span>WhatsApp Chat</span>
-                  <span className="text-rose-600">Disconnected</span>
-                </div>
-                <div className="text-[11px] text-[#191817] bg-[#F8F5F0] p-2 rounded">
-                  "I want to buy the black boots" → Requires manual copy to notebook
-                </div>
-              </div>
-            </div>
+                <div className="space-y-3">
+                  {/* Visual fragment representation */}
+                  <div className="p-3.5 rounded-xl bg-white border border-[#E4DCD3] text-xs font-mono space-y-2">
+                    <div className="flex justify-between items-center text-[#817B75]">
+                      <span>{reality.fragmentTitle}</span>
+                      <span className={reality.fragmentStatus === 'Friction' ? 'text-amber-600' : 'text-rose-600'}>
+                        {reality.fragmentStatus}
+                      </span>
+                    </div>
+                    <div className="text-[11px] text-[#191817] bg-[#F8F5F0] p-2 rounded">
+                      {reality.fragmentExample}
+                    </div>
+                  </div>
 
-            {/* Card 2 */}
-            <div className="p-7 rounded-2xl bg-[#F8F5F0] border border-[#E4DCD3] flex flex-col justify-between hover:border-[#B85F45]/60 transition-all group">
-              <div>
-                <div className="w-12 h-12 rounded-xl bg-white border border-[#D9CEBF] flex items-center justify-center text-[#B85F45] font-mono font-bold text-lg mb-6 shadow-xs group-hover:bg-[#B85F45] group-hover:text-white transition-colors">
-                  02
-                </div>
-                <h3 className="text-xl font-bold text-[#191817] mb-3 leading-snug">
-                  Your team spends time moving information instead of acting on it.
-                </h3>
-                <p className="text-sm text-[#817B75] leading-relaxed mb-6">
-                  Updating products, checking stock, reconciling sales and answering repetitive questions can turn routine work into a chain of manual tasks.
-                </p>
-              </div>
-
-              {/* Visual fragment representation */}
-              <div className="p-3.5 rounded-xl bg-white border border-[#E4DCD3] text-xs font-mono space-y-2">
-                <div className="flex justify-between items-center text-[#817B75]">
-                  <span>3 Separate Tabs</span>
-                  <span className="text-amber-600">Friction</span>
-                </div>
-                <div className="text-[11px] text-[#191817] bg-[#F8F5F0] p-2 rounded">
-                  WhatsApp ↔ Excel Stock ↔ Mobile Money SMS
+                  <div className="pt-2 flex items-center justify-between text-xs font-semibold text-[#B85F45]">
+                    <span>Click for full breakdown</span>
+                    <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                  </div>
                 </div>
               </div>
-            </div>
-
-            {/* Card 3 */}
-            <div className="p-7 rounded-2xl bg-[#F8F5F0] border border-[#E4DCD3] flex flex-col justify-between hover:border-[#B85F45]/60 transition-all group">
-              <div>
-                <div className="w-12 h-12 rounded-xl bg-white border border-[#D9CEBF] flex items-center justify-center text-[#B85F45] font-mono font-bold text-lg mb-6 shadow-xs group-hover:bg-[#B85F45] group-hover:text-white transition-colors">
-                  03
-                </div>
-                <h3 className="text-xl font-bold text-[#191817] mb-3 leading-snug">
-                  You cannot make confident decisions from disconnected information.
-                </h3>
-                <p className="text-sm text-[#817B75] leading-relaxed mb-6">
-                  If your sales, product costs, expenses and inventory records are incomplete or inconsistent, understanding business performance becomes harder.
-                </p>
-              </div>
-
-              {/* Visual fragment representation */}
-              <div className="p-3.5 rounded-xl bg-white border border-[#E4DCD3] text-xs font-mono space-y-2">
-                <div className="flex justify-between items-center text-[#817B75]">
-                  <span>True Margins</span>
-                  <span className="text-rose-600">Unknown</span>
-                </div>
-                <div className="text-[11px] text-[#191817] bg-[#F8F5F0] p-2 rounded">
-                  Cash in hand ≠ True gross profit without COGS
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -679,6 +710,162 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenDemo }) =>
                 aria-label="Next image"
               >
                 <ChevronRight className="w-5 h-5" />
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* OVERLAY MODAL for Section 2: Operational Realities */}
+      {selectedRealityIndex !== null && (
+        <div 
+          className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/80 backdrop-blur-md animate-in fade-in duration-300"
+          onClick={() => setSelectedRealityIndex(null)}
+        >
+          <div 
+            className="relative w-full max-w-4xl max-h-[92vh] flex flex-col bg-white rounded-2xl border border-[#E4DCD3] shadow-2xl overflow-hidden transform transition-all duration-300 ease-out animate-in zoom-in-95"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Modal Top Bar */}
+            <div className="p-4 sm:p-5 bg-[#F8F5F0] border-b border-[#E4DCD3] flex flex-wrap items-center justify-between gap-3">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-xl bg-[#B85F45] text-white flex items-center justify-center font-mono font-bold text-base shrink-0">
+                  {OPERATIONAL_REALITIES[selectedRealityIndex].number}
+                </div>
+                <div>
+                  <span className="text-[10px] font-mono uppercase font-bold text-[#B85F45] block">
+                    Operational Reality • {OPERATIONAL_REALITIES[selectedRealityIndex].tag}
+                  </span>
+                  <h3 className="text-base sm:text-lg font-extrabold text-[#191817] leading-tight">
+                    {OPERATIONAL_REALITIES[selectedRealityIndex].subtitle}
+                  </h3>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-2">
+                {/* 01, 02, 03 quick tabs inside modal */}
+                <div className="flex items-center gap-1 bg-[#EDE4D9] p-1 rounded-xl">
+                  {OPERATIONAL_REALITIES.map((r, idx) => (
+                    <button
+                      key={r.id}
+                      onClick={() => setSelectedRealityIndex(idx)}
+                      className={`px-3 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                        selectedRealityIndex === idx
+                          ? 'bg-white text-[#B85F45] shadow-xs'
+                          : 'text-[#817B75] hover:text-[#191817]'
+                      }`}
+                    >
+                      {r.number}
+                    </button>
+                  ))}
+                </div>
+
+                <button
+                  onClick={() => setSelectedRealityIndex(null)}
+                  className="p-2 rounded-lg bg-[#EDE4D9]/80 hover:bg-[#EDE4D9] text-[#817B75] hover:text-[#191817] transition-colors cursor-pointer"
+                  aria-label="Close breakdown"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
+            </div>
+
+            {/* Modal Body */}
+            <div className="p-5 sm:p-7 overflow-y-auto space-y-6">
+              <div>
+                <h4 className="text-xl sm:text-2xl font-extrabold text-[#191817] leading-snug mb-2">
+                  {OPERATIONAL_REALITIES[selectedRealityIndex].title}
+                </h4>
+                <p className="text-sm sm:text-base text-[#817B75] leading-relaxed">
+                  {OPERATIONAL_REALITIES[selectedRealityIndex].description}
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+                {/* Left side: The Daily Reality & Impacts */}
+                <div className="lg:col-span-6 p-5 rounded-xl bg-[#F8F5F0] border border-[#E4DCD3] space-y-4 flex flex-col justify-between">
+                  <div>
+                    <span className="text-[11px] font-mono font-bold uppercase text-rose-600 block mb-1">
+                      Daily Reality in Stores
+                    </span>
+                    <p className="text-xs sm:text-sm text-[#191817] leading-relaxed font-sans">
+                      {OPERATIONAL_REALITIES[selectedRealityIndex].dailyReality}
+                    </p>
+                  </div>
+
+                  <div className="pt-2 border-t border-[#EDE4D9]">
+                    <span className="text-[11px] font-mono font-bold uppercase text-[#817B75] block mb-2">
+                      Friction Points:
+                    </span>
+                    <ul className="space-y-2 text-xs text-[#817B75]">
+                      {OPERATIONAL_REALITIES[selectedRealityIndex].impacts.map((impact, i) => (
+                        <li key={i} className="flex items-start gap-2">
+                          <AlertCircle className="w-4 h-4 text-rose-500 shrink-0 mt-0.5" />
+                          <span>{impact}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Right side: How Mupezeni Solves It */}
+                <div className="lg:col-span-6 p-5 rounded-xl bg-[#191817] text-white border border-[#312E2B] space-y-4 flex flex-col justify-between shadow-sm">
+                  <div>
+                    <div className="flex items-center gap-2 mb-2">
+                      <Sparkles className="w-4 h-4 text-[#B85F45]" />
+                      <span className="text-[11px] font-mono font-bold uppercase text-emerald-400">
+                        How Mupezeni Connects It
+                      </span>
+                    </div>
+                    <p className="text-xs sm:text-sm text-[#EDE4D9] leading-relaxed font-sans">
+                      {OPERATIONAL_REALITIES[selectedRealityIndex].mupezeniSolution}
+                    </p>
+                  </div>
+
+                  <div className="p-3.5 rounded-lg bg-[#24211E] border border-[#3A3632] space-y-2 text-xs font-mono">
+                    <div className="flex justify-between items-center text-emerald-400 font-bold">
+                      <span>Operational Status</span>
+                      <span>Synced • Active</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-[#D9CEBF] text-[11px]">
+                      <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                      <span>Zero manual re-entry • Real-time cross-channel accuracy</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Modal Footer Controls */}
+            <div className="p-4 bg-[#F8F5F0] border-t border-[#E4DCD3] flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={() => {
+                    const prev = (selectedRealityIndex - 1 + OPERATIONAL_REALITIES.length) % OPERATIONAL_REALITIES.length;
+                    setSelectedRealityIndex(prev);
+                  }}
+                  className="px-3 py-1.5 rounded-lg border border-[#D9CEBF] bg-white hover:bg-[#EDE4D9] text-[#191817] text-xs font-semibold flex items-center gap-1.5 transition-colors cursor-pointer"
+                >
+                  <ChevronLeft className="w-4 h-4" />
+                  <span>Previous</span>
+                </button>
+                <button
+                  onClick={() => {
+                    const next = (selectedRealityIndex + 1) % OPERATIONAL_REALITIES.length;
+                    setSelectedRealityIndex(next);
+                  }}
+                  className="px-3 py-1.5 rounded-lg border border-[#D9CEBF] bg-white hover:bg-[#EDE4D9] text-[#191817] text-xs font-semibold flex items-center gap-1.5 transition-colors cursor-pointer"
+                >
+                  <span>Next</span>
+                  <ChevronRight className="w-4 h-4" />
+                </button>
+              </div>
+
+              <button
+                onClick={() => setSelectedRealityIndex(null)}
+                className="px-5 py-2 rounded-xl bg-[#B85F45] hover:bg-[#97442F] text-white text-xs font-bold transition-all shadow-xs cursor-pointer"
+              >
+                Done Reading
               </button>
             </div>
           </div>
