@@ -51,14 +51,11 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenD
           className="flex items-center gap-3 text-left group focus:outline-none"
         >
           {/* Brand Logo Image */}
-          <div className="h-10 px-2 rounded-xl bg-white flex items-center justify-center shadow-xs group-hover:scale-105 transition-all shrink-0">
-            <img 
-              src="/logo.png" 
-              alt="MUPEZENI Logo" 
-              style={{ height: '30px' }}
-              className="h-[30px] w-auto object-contain" 
-            />
-          </div>
+          <img 
+            src="/logo.png" 
+            alt="MUPEZENI Logo" 
+            className="h-8 w-auto object-contain group-hover:scale-105 transition-transform shrink-0" 
+          />
           <div className="flex flex-col">
             <span className="font-extrabold tracking-wider text-xl text-[#191817] leading-none">
               MUPEZENI

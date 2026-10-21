@@ -21,9 +21,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenDemo }) => {
           {/* Brand Column */}
           <div className="lg:col-span-2 pr-0 lg:pr-6">
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-9 px-2 rounded-xl bg-white flex items-center justify-center shadow-xs shrink-0">
-                <img src="/logo.png" alt="MUPEZENI Logo" className="h-[24px] w-auto object-contain" />
-              </div>
+              <img src="/logo.png" alt="MUPEZENI Logo" className="h-7 w-auto object-contain shrink-0" />
               <span className="font-extrabold tracking-wider text-xl text-white">
                 MUPEZENI
               </span>

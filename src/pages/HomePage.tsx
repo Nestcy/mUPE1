@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { PageType } from '../types';
 import { Calculator } from '../components/Calculator';
 import { WorkflowSimulation } from '../components/WorkflowSimulation';
@@ -18,11 +18,14 @@ import {
   Smartphone,
   ExternalLink,
   ChevronRight,
+  ChevronLeft,
   Sparkles,
   Users,
   Store,
   HelpCircle,
-  AlertCircle
+  AlertCircle,
+  Maximize2,
+  X
 } from 'lucide-react';
 
 interface HomePageProps {
@@ -30,7 +33,76 @@ interface HomePageProps {
   onOpenDemo: () => void;
 }
 
+const DEMO_SCREENS = [
+  {
+    id: 'demo1',
+    title: 'Connected Core',
+    shortLabel: 'Overview',
+    subtitle: 'The Connected Retail Business',
+    image: '/demo1.png',
+    badge: 'Operations Hub',
+    description: 'Centralized sales tracking, live inventory valuation, POS events, and synchronized business systems.'
+  },
+  {
+    id: 'demo2',
+    title: 'AI Workforce & CRM',
+    shortLabel: 'AI CRM',
+    subtitle: 'Every Conversation Has Potential',
+    image: '/demo2.png',
+    badge: 'WhatsApp Assistant',
+    description: 'WhatsApp AI sales assistants check live inventory, take orders, and feed structured CRM follow-up pipelines.'
+  },
+  {
+    id: 'demo3',
+    title: 'Connected Sales Cycle',
+    shortLabel: 'Sales Cycle',
+    subtitle: 'From First Inquiry to Next Opportunity',
+    image: '/demo3.png',
+    badge: 'End-to-End Flow',
+    description: 'Omnichannel customer acquisition through WhatsApp & Web, CRM lead tracking, automatic POS updates, and marketing briefs.'
+  }
+];
+
+const TYPEWRITER_PHRASES = [
+  "Mupezeni • The Intelligent Operating System for Retail",
+  "Mupezeni • Connect Sales, Inventory, POS & WhatsApp",
+  "Mupezeni • Grow Your Retail Business While You Sleep",
+  "Mupezeni • Built in Zambia for African Retail",
+];
+
 export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenDemo }) => {
+  const [activeDemoIndex, setActiveDemoIndex] = useState(0);
+  const [isZoomModalOpen, setIsZoomModalOpen] = useState(false);
+  const [phraseIndex, setPhraseIndex] = useState(0);
+  const [displayedText, setDisplayedText] = useState('');
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const currentPhrase = TYPEWRITER_PHRASES[phraseIndex];
+    let timer: NodeJS.Timeout;
+
+    if (!isDeleting && displayedText === currentPhrase) {
+      // Pause after typing full phrase
+      timer = setTimeout(() => setIsDeleting(true), 2400);
+    } else if (isDeleting && displayedText === '') {
+      // Done deleting, advance to next phrase
+      setIsDeleting(false);
+      setPhraseIndex((prev) => (prev + 1) % TYPEWRITER_PHRASES.length);
+    } else {
+      // Typing or backspacing
+      const speed = isDeleting ? 24 : 52;
+      timer = setTimeout(() => {
+        setDisplayedText((prev) =>
+          isDeleting
+            ? currentPhrase.substring(0, prev.length - 1)
+            : currentPhrase.substring(0, prev.length + 1)
+        );
+      }, speed);
+    }
+
+    return () => clearTimeout(timer);
+  }, [displayedText, isDeleting, phraseIndex]);
+
   return (
     <div className="min-h-screen">
       {/* SECTION 1: THE CINEMATIC OPENING & HERO */}
@@ -39,9 +111,12 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenDemo }) =>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Copy Column (6 cols) */}
             <div className="lg:col-span-6 space-y-6">
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#EDE4D9] text-[#B85F45] text-xs font-bold tracking-wider uppercase">
-                <span className="w-2 h-2 rounded-full bg-[#B85F45] animate-pulse"></span>
-                <span>Mupezeni • The Intelligent Operating System for Retail</span>
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#EDE4D9] text-[#B85F45] text-xs font-bold tracking-wider uppercase shadow-xs">
+                <span className="w-2 h-2 rounded-full bg-[#B85F45] animate-pulse shrink-0"></span>
+                <span className="font-mono min-h-[1.25rem] inline-flex items-center">
+                  <span>{displayedText}</span>
+                  <span className="inline-block w-1.5 h-3.5 bg-[#B85F45] ml-1 animate-pulse"></span>
+                </span>
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#191817] tracking-tight leading-[1.08]">
@@ -102,85 +177,94 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenDemo }) =>
                 <div className="absolute -inset-1.5 bg-gradient-to-tr from-[#B85F45]/20 to-[#EDE4D9] rounded-3xl blur-xl opacity-70"></div>
 
                 {/* Main Operating System Window */}
-                <div className="relative rounded-2xl bg-[#191817] border border-[#3A3632] shadow-2xl p-5 sm:p-6 text-white font-sans overflow-hidden">
+                <div className="relative rounded-2xl bg-[#191817] border border-[#3A3632] shadow-2xl p-4 sm:p-5 text-white font-sans overflow-hidden">
                   {/* Window Bar */}
-                  <div className="flex items-center justify-between pb-4 border-b border-[#2C2926] mb-4 text-xs font-mono">
-                    <div className="flex items-center gap-2.5">
-                      <div className="w-5 h-5 rounded-md bg-white p-0.5 flex items-center justify-center shrink-0">
-                        <img src="/logo.png" alt="Mupezeni" className="w-full h-full object-contain" />
-                      </div>
-                      <span className="font-bold text-[#EDE4D9]">MUPEZENI OS • LUSAKA DISPATCH</span>
+                  <div className="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-[#2C2926] mb-3 text-xs font-mono">
+                    <div className="flex items-center gap-2">
+                      <img src="/logo.png" alt="Mupezeni" className="h-4.5 w-auto object-contain shrink-0" />
+                      <span className="font-bold text-[#EDE4D9] text-[11px] sm:text-xs">MUPEZENI OS • LIVE PREVIEW</span>
                     </div>
-                    <span className="px-2 py-0.5 rounded text-[10px] bg-emerald-950 text-emerald-400 border border-emerald-900/60 font-semibold">
-                      ● ALL 5 SYSTEMS SYNCED
+
+                    <span className="px-2 py-0.5 rounded text-[10px] bg-emerald-950 text-emerald-400 border border-emerald-900/60 font-semibold flex items-center gap-1.5">
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                      SYSTEM LIVE
                     </span>
                   </div>
 
-                  {/* Connected Interface Simulation */}
-                  <div className="space-y-3.5 text-xs">
-                    {/* Live Event 1: WhatsApp incoming query handled by AI worker */}
-                    <div className="p-3.5 rounded-xl bg-[#24211E] border border-[#3A3632] flex items-start gap-3">
-                      <div className="p-2 rounded-lg bg-emerald-950 text-emerald-400 shrink-0">
-                        <MessageCircle className="w-4 h-4" />
-                      </div>
-                      <div className="flex-1 min-w-0">
-                        <div className="flex items-center justify-between text-[11px] mb-1">
-                          <span className="font-semibold text-emerald-400">WhatsApp AI Support Worker</span>
-                          <span className="text-[#817B75] font-mono">Just now</span>
-                        </div>
-                        <p className="text-white font-medium truncate">
-                          Customer: "Do you have size 42 black Chelsea boots?"
-                        </p>
-                        <p className="text-[#817B75] text-[11px] mt-0.5">
-                          ✓ Verified inventory (3 in stock, Cairo Road) → Replied with price K650.
-                        </p>
-                      </div>
-                    </div>
+                  {/* Tab Selector Buttons for demo1, demo2, demo3 */}
+                  <div className="flex items-center gap-1.5 p-1 bg-[#24211E] rounded-xl border border-[#332E2A] mb-3">
+                    {DEMO_SCREENS.map((demo, idx) => (
+                      <button
+                        key={demo.id}
+                        onClick={() => setActiveDemoIndex(idx)}
+                        className={`flex-1 py-1.5 px-2 rounded-lg text-xs font-semibold transition-all flex items-center justify-center gap-1.5 ${
+                          activeDemoIndex === idx
+                            ? 'bg-[#B85F45] text-white shadow-sm'
+                            : 'text-[#817B75] hover:text-[#EDE4D9] hover:bg-[#2C2926]'
+                        }`}
+                      >
+                        <span className="w-4 h-4 rounded-full text-[10px] flex items-center justify-center font-mono font-bold bg-black/30">
+                          {idx + 1}
+                        </span>
+                        <span className="truncate">{demo.shortLabel}</span>
+                      </button>
+                    ))}
+                  </div>
 
-                    {/* Live Event 2: Sale recorded & inventory deducted */}
-                    <div className="p-3.5 rounded-xl bg-[#24211E] border border-[#3A3632] flex items-start gap-3">
-                      <div className="p-2 rounded-lg bg-[#3D251E] text-[#B85F45] shrink-0">
-                        <Boxes className="w-4 h-4" />
-                      </div>
-                      <div className="flex-1 min-w-0">
-                        <div className="flex items-center justify-between text-[11px] mb-1">
-                          <span className="font-semibold text-[#B85F45]">Inventory & Sales Synchronization</span>
-                          <span className="text-[#817B75] font-mono">2 mins ago</span>
-                        </div>
-                        <div className="flex justify-between items-center text-white">
-                          <span className="font-medium">Order #ORD-8921 (Airtel MoMo)</span>
-                          <span className="font-mono font-bold text-emerald-400">+K650.00</span>
-                        </div>
-                        <p className="text-[#817B75] text-[11px] mt-0.5">
-                          Stock count updated: 14 → 13 units at Cairo Road. Web catalog synced.
-                        </p>
-                      </div>
-                    </div>
+                  {/* Screenshot Display Frame */}
+                  <div className="relative group rounded-xl overflow-hidden border border-[#332E2A] bg-[#141312] aspect-[3/2] shadow-inner">
+                    <img
+                      src={DEMO_SCREENS[activeDemoIndex].image}
+                      alt={DEMO_SCREENS[activeDemoIndex].title}
+                      className="w-full h-full object-cover sm:object-contain bg-[#F8F5F0] transition-transform duration-300 group-hover:scale-[1.01]"
+                    />
 
-                    {/* Live Event 3: Operational numbers summary */}
-                    <div className="p-3.5 rounded-xl bg-[#211E1C] border border-[#332E2A] grid grid-cols-3 gap-2 text-center">
-                      <div className="p-2 rounded-lg bg-[#191817]">
-                        <span className="text-[10px] text-[#817B75] block uppercase">Today's Sales</span>
-                        <span className="font-mono font-bold text-white text-sm">K12,450</span>
-                      </div>
-                      <div className="p-2 rounded-lg bg-[#191817]">
-                        <span className="text-[10px] text-[#817B75] block uppercase">Gross Margin</span>
-                        <span className="font-mono font-bold text-emerald-400 text-sm">42.1%</span>
-                      </div>
-                      <div className="p-2 rounded-lg bg-[#191817]">
-                        <span className="text-[10px] text-[#817B75] block uppercase">AI Tasks</span>
-                        <span className="font-mono font-bold text-[#B85F45] text-sm">34 Done</span>
-                      </div>
+                    {/* Left / Right Nav Arrows */}
+                    <button
+                      onClick={() => setActiveDemoIndex((prev) => (prev === 0 ? DEMO_SCREENS.length - 1 : prev - 1))}
+                      className="absolute left-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/60 hover:bg-black/85 text-white backdrop-blur-xs opacity-80 hover:opacity-100 transition-all shadow-md"
+                      aria-label="Previous demo image"
+                    >
+                      <ChevronLeft className="w-4 h-4" />
+                    </button>
+                    <button
+                      onClick={() => setActiveDemoIndex((prev) => (prev === DEMO_SCREENS.length - 1 ? 0 : prev + 1))}
+                      className="absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/60 hover:bg-black/85 text-white backdrop-blur-xs opacity-80 hover:opacity-100 transition-all shadow-md"
+                      aria-label="Next demo image"
+                    >
+                      <ChevronRight className="w-4 h-4" />
+                    </button>
+
+                    {/* Expand Button */}
+                    <button
+                      onClick={() => setIsZoomModalOpen(true)}
+                      className="absolute top-2 right-2 px-2.5 py-1 rounded-lg bg-black/70 hover:bg-black text-white text-[11px] font-medium backdrop-blur-xs flex items-center gap-1.5 shadow-sm opacity-90 hover:opacity-100 transition-all border border-white/10"
+                      title="Enlarge image"
+                    >
+                      <Maximize2 className="w-3.5 h-3.5" />
+                      <span className="hidden sm:inline">Enlarge</span>
+                    </button>
+
+                    {/* Screen Badge */}
+                    <div className="absolute bottom-2 left-2 px-2.5 py-1 rounded-lg bg-black/80 backdrop-blur-xs border border-white/10 text-white text-[10px] font-mono flex items-center gap-1.5">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#B85F45]"></span>
+                      <span className="text-[#EDE4D9] font-medium">{DEMO_SCREENS[activeDemoIndex].badge}</span>
+                      <span className="text-[#817B75]">•</span>
+                      <span className="text-[#817B75]">Screen {activeDemoIndex + 1} of 3</span>
                     </div>
                   </div>
 
-                  <div className="mt-4 pt-3 border-t border-[#2C2926] flex items-center justify-between text-[11px] text-[#817B75]">
-                    <span>Sample demonstration interface</span>
+                  {/* Caption & Navigation Link */}
+                  <div className="mt-3 pt-2.5 border-t border-[#2C2926] flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
+                    <div className="text-[11px] text-[#A89F95]">
+                      <strong className="text-white font-semibold">{DEMO_SCREENS[activeDemoIndex].title}: </strong>
+                      <span>{DEMO_SCREENS[activeDemoIndex].description}</span>
+                    </div>
                     <button
                       onClick={() => onNavigate('platform')}
-                      className="text-[#B85F45] hover:text-[#DC836A] font-semibold flex items-center gap-1"
+                      className="text-[#B85F45] hover:text-[#DC836A] font-semibold flex items-center gap-1 shrink-0 text-xs self-end sm:self-auto"
                     >
-                      <span>Explore full platform architecture</span>
+                      <span>Explore Platform</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </button>
                   </div>
@@ -521,6 +605,85 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenDemo }) =>
           </div>
         </div>
       </section>
+
+      {/* Zoom / Lightbox Modal for Screenshots */}
+      {isZoomModalOpen && (
+        <div 
+          className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/85 backdrop-blur-md animate-in fade-in duration-200"
+          onClick={() => setIsZoomModalOpen(false)}
+        >
+          <div 
+            className="relative w-full max-w-6xl max-h-[92vh] flex flex-col bg-[#191817] rounded-2xl border border-[#3A3632] shadow-2xl overflow-hidden"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Modal Header */}
+            <div className="p-4 bg-[#211E1C] border-b border-[#332E2A] flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <img src="/logo.png" alt="Mupezeni" className="h-7 w-auto object-contain shrink-0" />
+                <div>
+                  <h3 className="text-sm sm:text-base font-bold text-white">
+                    {DEMO_SCREENS[activeDemoIndex].title} — {DEMO_SCREENS[activeDemoIndex].subtitle}
+                  </h3>
+                  <p className="text-xs text-[#817B75] hidden sm:block">
+                    {DEMO_SCREENS[activeDemoIndex].description}
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-2">
+                {/* 1, 2, 3 Switchers inside modal */}
+                <div className="flex items-center gap-1 bg-[#141312] p-1 rounded-lg border border-[#2C2926]">
+                  {DEMO_SCREENS.map((demo, idx) => (
+                    <button
+                      key={demo.id}
+                      onClick={() => setActiveDemoIndex(idx)}
+                      className={`px-2.5 py-1 rounded text-xs font-semibold transition-all ${
+                        activeDemoIndex === idx
+                          ? 'bg-[#B85F45] text-white'
+                          : 'text-[#817B75] hover:text-white'
+                      }`}
+                    >
+                      {demo.shortLabel}
+                    </button>
+                  ))}
+                </div>
+
+                <button
+                  onClick={() => setIsZoomModalOpen(false)}
+                  className="p-1.5 rounded-lg bg-[#2C2926] text-[#817B75] hover:text-white hover:bg-[#3A3632] transition-colors"
+                  aria-label="Close modal"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
+            </div>
+
+            {/* Modal Image Display */}
+            <div className="relative flex-1 overflow-auto bg-[#141312] p-2 sm:p-4 flex items-center justify-center">
+              <img
+                src={DEMO_SCREENS[activeDemoIndex].image}
+                alt={DEMO_SCREENS[activeDemoIndex].title}
+                className="max-w-full max-h-[75vh] object-contain rounded-lg shadow-lg border border-[#2C2926]"
+              />
+
+              <button
+                onClick={() => setActiveDemoIndex((prev) => (prev === 0 ? DEMO_SCREENS.length - 1 : prev - 1))}
+                className="absolute left-4 top-1/2 -translate-y-1/2 p-2.5 rounded-full bg-black/70 hover:bg-black text-white shadow-xl backdrop-blur-xs transition-transform active:scale-95"
+                aria-label="Previous image"
+              >
+                <ChevronLeft className="w-5 h-5" />
+              </button>
+              <button
+                onClick={() => setActiveDemoIndex((prev) => (prev === DEMO_SCREENS.length - 1 ? 0 : prev + 1))}
+                className="absolute right-4 top-1/2 -translate-y-1/2 p-2.5 rounded-full bg-black/70 hover:bg-black text-white shadow-xl backdrop-blur-xs transition-transform active:scale-95"
+                aria-label="Next image"
+              >
+                <ChevronRight className="w-5 h-5" />
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

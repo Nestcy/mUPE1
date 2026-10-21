@@ -46,9 +46,7 @@ export const DemoModal: React.FC<DemoModalProps> = ({ isOpen, onClose }) => {
         {/* Header */}
         <div className="p-6 bg-[#F8F5F0] border-b border-[#E4DCD3] flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="h-10 px-2 rounded-xl bg-white border border-[#E4DCD3] flex items-center justify-center shadow-xs shrink-0">
-              <img src="/logo.png" alt="MUPEZENI Logo" className="h-[28px] w-auto object-contain" />
-            </div>
+            <img src="/logo.png" alt="MUPEZENI Logo" className="h-8 w-auto object-contain shrink-0" />
             <div>
               <h3 className="font-extrabold text-[#191817] text-lg">Let's talk about your retail business</h3>
               <p className="text-xs text-[#817B75]">See how Mupezeni connects your operations in 4–6 weeks</p>
